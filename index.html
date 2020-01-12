@@ -16,12 +16,13 @@
 
             <label for="">Bill amount</label><br>
 
-            <input type="number" placeholder="How much is your bill" required><br>
+            <span>&#8358</span>
+            <input id="bill-amount" type="number" placeholder="How much is your bill"  required><br>
 
-            <label for="">How was your service</label><br>
+            <label for="">Rate your service</label><br>
 
-            <select name="" id="drop-down" required>
-                <option>- Choose an option -</option>
+            <select name="" id="drop-down"  required>
+                <option value="Not-chosen">- Choose an option -</option>
                 <option value="0.3">Superb -30%</option>
                 <option value="0.25">Good -25%</option>
                 <option value="0.2">Meh -20%</option>
@@ -31,11 +32,11 @@
 
             <label for="">Number of people sharing bill</label><br>
 
-            <input type="number" placeholder="How many people are sharing the bill" required> people<br>
+            <input id="number-of-people" type="number" placeholder="How many people are sharing the bill"  required><br>
 
-            <button id="calculate"><strong>CALCULATE</strong></button><br>
+            <button id="calculate" type="submit" onclick="calculateTip(); return false"><strong>CALCULATE</strong></button><br>
 
-            <span id="result">something</span>
+            <span id="result"></span>
 
         </form>
 

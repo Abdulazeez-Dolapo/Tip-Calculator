@@ -7,7 +7,7 @@ body {
 
 .container {
     margin: 0 auto;
-    max-width: 400px;
+    max-width: 350px;
     width: 100%;
     position: relative;
 }
@@ -23,16 +23,20 @@ body {
 
 h1 {
     text-align: center; 
+    width: 100%;
+    position: relative;
 }
 
 #form input[type="number"], 
 #drop-down {
-    width: 250px;
     height: 30px;
     border-radius: 5px;
     border-style: solid;
     margin-bottom: 20px;
     margin-top: 10px;
+    max-width: 250px;
+    width: 100%;
+    position: relative;
 } 
  
 #form button {
@@ -43,6 +47,7 @@ h1 {
     text-align: center;
     border-style: solid;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 #form input[type="number"], 

@@ -7,7 +7,28 @@ const calculateTip = ()=> {
 
 
     // Check if every field has a valid value 
-    if(billAmount == '' || serviceQuality == 'Not-chosen' || numberOfPeople == '' ) {
-        alert('Some values are missing, Kindly fill all 3 fields')
+    if(billAmount === null || serviceQuality === 'Not-chosen' || numberOfPeople === null ) {
+        alert('One or more values are missing, Kindly fill every field')
+    }
+    
+    // Check if it's just one person paying the bill
+    else if (numberOfPeople === '1') {
+        // Calculate the tip
+        const tip = (billAmount * serviceQuality) / numberOfPeople
+        // Approximate the tip to 2 decimal places
+        const approximatedTip = tip.toFixed(2) 
+    
+        // Display the value of tip on the app
+        document.getElementById('result').innerHTML = `Pay an additional &#8358 ${approximatedTip}`        
+    } 
+    
+    else {
+        // Calculate the tip
+        const tip = (billAmount * serviceQuality) / numberOfPeople
+        // Approximate the tip to 2 decimal places
+        const approximatedTip = tip.toFixed(2) 
+    
+        // Display the value of tip on the app
+        document.getElementById('result').innerHTML = `Pay an additional &#8358 ${approximatedTip} each`
     }
 }
