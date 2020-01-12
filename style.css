@@ -1,7 +1,7 @@
 body {    
     background-color: rgb(100, 41, 41);
     font-family: Helvetica, arial, sans-serif;
-    font-size: 20px; 
+    font-size: 18px; 
     padding-top: 50px;
 }
 
@@ -18,8 +18,11 @@ body {
     border-radius: 5%;
     border-style: solid;
     border-color: darkred;
-    font-family: Helvetica, arial, sans-serif;
-    
+    font-family: Helvetica, arial, sans-serif;   
+}
+
+h1 {
+    text-align: center; 
 }
 
 #form input[type="number"], 
@@ -28,9 +31,10 @@ body {
     height: 30px;
     border-radius: 5px;
     border-style: solid;
-    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
 } 
-
+ 
 #form button {
     color: wheat;
     width: 100px;
@@ -39,5 +43,9 @@ body {
     text-align: center;
     border-style: solid;
     border-radius: 5px;
-    margin-top: 20px;
+}
+
+#form input[type="number"], 
+#drop-down, #form button :hover {
+    cursor: pointer;
 }
