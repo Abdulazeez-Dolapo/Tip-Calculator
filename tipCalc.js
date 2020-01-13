@@ -21,7 +21,7 @@ const calculateTip = ()=> {
         // Display the value of tip on the app
         document.getElementById('result').innerHTML = `Pay an additional &#8358 ${approximatedTip}`        
     } 
-    
+
     else {
         // Calculate the tip
         const tip = (billAmount * serviceQuality) / numberOfPeople
@@ -31,4 +31,8 @@ const calculateTip = ()=> {
         // Display the value of tip on the app
         document.getElementById('result').innerHTML = `Pay an additional &#8358 ${approximatedTip} each`
     }
+
+    document.getElementById('bill-amount').value = "";
+    document.getElementById('drop-down').value  = "";  
+    document.getElementById('number-of-people').value = "";
 }
