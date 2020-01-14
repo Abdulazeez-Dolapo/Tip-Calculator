@@ -33,6 +33,6 @@ const calculateTip = ()=> {
     }
 
     document.getElementById('bill-amount').value = "";
-    document.getElementById('drop-down').value  = "";  
+    document.getElementById('drop-down').value  = "Not-chosen";  
     document.getElementById('number-of-people').value = "";
 }
